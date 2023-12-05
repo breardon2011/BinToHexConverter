@@ -43,8 +43,6 @@ std::string binaryGroupToHex(std::string group) {
   std::string position2 = group.substr(1, 1);
   std::string position3 = group.substr(2, 1);
   std::string position4 = group.substr(3, 1);
-  std::cout << position1 << " " << position2 << " " << position3 << " "
-            << position4 << std::endl;
 
   // raise each position to 8 4 2 1 respectively
   if (stoi(position1) == 1) {
