@@ -79,5 +79,5 @@ int main() {
   std::cout << "Hello user!\n";
   std::string userBin = getBinary();
   std::string userHex = convertToHex(userBin);
-  std::cout << "Your binary number is: " << userHex << "\n";
+  std::cout << "Your hex number is: " << userHex << "\n";
 }
