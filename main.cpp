@@ -70,10 +70,8 @@ std::string binaryGroupToHex(std::string group) {
 
 std::string convertToHex(std::string x) {
   std::string group1 = x.substr(0, 4);
-  std::string group2 = x.substr(4, 8);
-  std::string hex1 = binaryGroupToHex(group1);
-  std::string hex2 = binaryGroupToHex(group2);
-  std::string hex = hex1 + hex2;
+  std::string group2 = x.substr(4, 4);
+  std::string hex = binaryGroupToHex(group1) + binaryGroupToHex(group2);
   return hex;
 }
 
